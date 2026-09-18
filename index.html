@@ -3,29 +3,32 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>GoogleLinkRU — Legal</title>
+<title>GoogleLinkRU</title>
 <style>
   :root { --ink:#1c1e21; --muted:#5c636b; --accent:#3b82f6; --bg:#ffffff; --rule:#e5e7eb; }
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: var(--ink); background: var(--bg); padding: 48px 20px; }
-  main { max-width: 680px; margin: 0 auto; }
-  h1 { font-size: 1.6rem; font-weight: 650; letter-spacing: -0.01em; }
-  .sub { color: var(--muted); margin: 6px 0 28px; font-size: .95rem; }
-  ul { list-style: none; }
-  li { margin-bottom: 10px; }
-  a { color: var(--accent); text-decoration: none; font-size: 1.05rem; }
-  a:hover { text-decoration: underline; }
-  .meta { color: var(--muted); font-size: .85rem; border-top: 1px solid var(--rule); margin-top: 36px; padding-top: 14px; }
+  body { font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: var(--ink); background: var(--bg); padding: 64px 20px; }
+  main { max-width: 560px; margin: 0 auto; }
+  h1 { font-size: 1.9rem; font-weight: 650; letter-spacing: -0.02em; }
+  .tag { color: var(--accent); font-size: .8rem; font-weight: 600; text-transform: uppercase; letter-spacing: .12em; margin-bottom: 12px; }
+  p.lead { color: var(--muted); margin: 10px 0 34px; font-size: 1.05rem; }
+  .cards { display: grid; gap: 12px; }
+  a.card { display: block; border: 1px solid var(--rule); border-radius: 10px; padding: 16px 18px; text-decoration: none; color: var(--ink); transition: border-color .15s ease, box-shadow .15s ease; }
+  a.card:hover { border-color: var(--accent); box-shadow: 0 2px 10px rgba(59,130,246,.08); }
+  a.card .t { font-weight: 600; }
+  a.card .d { color: var(--muted); font-size: .9rem; margin-top: 2px; }
+  .meta { color: var(--muted); font-size: .85rem; border-top: 1px solid var(--rule); margin-top: 40px; padding-top: 14px; }
 </style>
 </head>
 <body>
 <main>
-  <h1>GoogleLinkRU — Legal</h1>
-  <p class="sub">Legal pages for the GoogleLinkRU OAuth application</p>
-  <ul>
-    <li><a href="privacy.html">Privacy Policy</a></li>
-    <li><a href="terms.html">Terms of Service</a></li>
-  </ul>
+  <p class="tag">Personal OAuth Application</p>
+  <h1>GoogleLinkRU</h1>
+  <p class="lead">GoogleLinkRU connects a Google account — Gmail, Calendar, and Drive — to locally running personal automation software, using the permissions granted on Google's consent screen.</p>
+  <div class="cards">
+    <a class="card" href="privacy.html"><div class="t">Privacy Policy</div><div class="d">What the app accesses, where data lives, and how to revoke</div></a>
+    <a class="card" href="terms.html"><div class="t">Terms of Service</div><div class="d">Personal use, warranties, and your responsibility</div></a>
+  </div>
   <div class="meta">GoogleLinkRU · Operated by Ryan Uhrich</div>
 </main>
 </body>
